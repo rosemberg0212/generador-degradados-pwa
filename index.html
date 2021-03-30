@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Desgradado hecho en Vue">
+    <!--Metadata para PWA -->
+
+	<!--Modificar barra estado android-->
+	<meta name="theme-color" content="#ffe4c4">
+
+	<!--Optimizacion de SEO-->
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+
+	<!--Modificar barra estado IOS-->
+	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <title>Desgradado</title>
+
+    <!--Iconos-->
+	<link rel="shortcut icon" href="./img/color16.png" type="image/png">
+	<link rel="apple-touch-icon" href="img/color16.png">
+    <link rel="apple-touch-startup-image" href="img/color16.png">
+    
+    <!--Manifest-->
+	<link rel="manifest" href="./manifest.json">
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <div id="app"> 
+        <h1>{{title}}</h1>
+        <hr>
+        <form>
+            <label>
+                Color1:
+                <input type="color" v-model="fcolor">
+            </label>
+
+            <label>
+                Color2:
+                <input type="color" v-model="tcolor">
+            </label>
+            
+        </form>
+
+        <form>
+            <label>
+                <input type="text" :value="setColor" class="inp">
+            </label>
+            
+            <hr>
+            <label>
+                Right
+                <input type="radio" value="1" v-model.number="orientation">
+            </label>
+
+            <label>
+                Left
+                <input type="radio" value="2" v-model.number="orientation">
+            </label>
+
+            <label>
+                Top
+                <input type="radio" value="3" v-model.number="orientation">
+            </label>
+            
+            <label>
+                Bottom
+                <input type="radio" value="4" v-model.number="orientation">
+            </label>
+        </form>
+
+        <div class="area" :style="setColor"></div>
+    </div>
+
+    <script src="./load.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mountApp.js"></script>
+    
+</body>
+</html>

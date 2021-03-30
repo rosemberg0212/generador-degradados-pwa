@@ -1,0 +1,50 @@
+{
+    "name": "Degradado APP Vue",
+    "short_name": "Degradado Vue",
+    "description": "Generador de Desgradado hecho en Vue",
+    "background_color": "#ffe4c4",
+    "theme_color": "#ffe4c4",
+    "start_url": "./?umt_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "icons": [
+        {
+          "src": "./img/color32.png",
+          "type": "image/png",
+          "sizes": "32x32"
+        },
+      {
+        "src": "./img/color64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      },
+      {
+        "src": "./img/color128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "./img/maskable_icon_x192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "./img/color256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "./img/color502.png",
+        "type": "image/png",
+        "sizes": "502x502"
+      },
+      {
+        "src": "./img/color1024.png",
+        "type": "image/png",
+        "sizes": "1024x1024"
+      }
+    ]
+}
